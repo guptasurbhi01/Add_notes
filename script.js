@@ -4,10 +4,10 @@ function addnote(textarea){
     let color = document.getElementById("pickcolor").value;
     let note = document.createElement("div");
     note.classList.add("note-container");
-      note.innerHTML = `<p>${textarea}</p> <button class="buttons" onclick="removeNote(this)" >X</button>`;
+      note.innerHTML = `<p>${textarea}</p> <button class="buttons" style="background-color:${color}" onclick="removeNote(this)" >X</button>`;
     note.style.backgroundColor = color;
     // console.log("k")
-    document.getElementById("right-container").appendChild(note);
+    document.getElementById("right-lower").appendChild(note);
 }
  function removeNote(button) {
    let note = button.parentNode;
