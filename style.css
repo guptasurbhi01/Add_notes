@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+.left-container{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: rgb(209,220,231);
+    padding: 0 1rem 0 5rem;
+    gap: 50px;
+}
+.note-container{
+    width: fit-content;
+    min-width: 200px;
+    height: 150px;
+    position: relative;
+    padding: 17px 17px 3px 3px;
+    border:none;
+    /* display:flex; */
+}
+.upper{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.color{
+    align-self: center;
+}
+#addnote{
+    padding: 20px 50px 20px 50px;
+    border-radius: 5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 19px;
+        background-image: linear-gradient( #ed6ea0, #ec8c69 );
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+    border: none;
+    cursor:pointer;
+    transition: all 5s ease-in-out;
+}
+#addnote:hover{
+            background-image: linear-gradient( to right, #f7186a, #fbb03b );
+}
+h1{
+    text-align: center;
+}
+textarea{
+    width: 75%;
+    box-shadow: 4px 4px 10px 0px #803636;
+    padding: 25px;
+}
+.right-container{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttons{
+    /* width:fit-content; */
+    padding:0;
+    float:right;
+    margin-top:-20px;
+    cursor:pointer;
+}
