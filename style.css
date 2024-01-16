@@ -61,7 +61,15 @@ textarea{
     width: 50vw;
     height: 100vh;
     display: flex;
+    flex-direction:column;
     flex-wrap: wrap;
+    gap:6px;
+}
+#right-lower{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
 }
 .buttons{
     /* width:fit-content; */
@@ -69,4 +77,5 @@ textarea{
     float:right;
     margin-top:-20px;
     cursor:pointer;
+    border:none;
 }
