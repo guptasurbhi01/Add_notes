@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="left-container">
+        <div class="upper">
+        <textarea name="" id="written-text" cols="80" rows="10" placeholder="// Write a note here"></textarea>
+        <div class="color">
+                    <img style="min-width:50px;min-height:36px;box-sizing:unset;box-shadow:none;background:unset;padding:0 6px 0 0;cursor:pointer;" src="chrome-extension://ohcpnigalekghcmgcdcenkpelffpdolg/img/icon16.png" title="Select with ColorPick Eyedropper - See advanced option: &quot;Add ColorPick Eyedropper near input[type=color] fields on websites&quot;" class="colorpick-eyedropper-input-trigger">
+                    <br>
+                    <input type="color" colorpick-eyedropper-active="true" id="pickcolor">
+                </div>
+                </div>
+                <div class="lower">
+                <button id="addnote">Add Note</button>
+                </div>
+    </div>
+    <div class="right-container" id ="right-container">
+        <h1>Your Notes</h1>
+        <!-- <div class="right-lower"></div> -->
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
